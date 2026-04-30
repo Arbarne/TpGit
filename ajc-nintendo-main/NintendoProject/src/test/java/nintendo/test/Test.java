@@ -1,5 +1,7 @@
 package nintendo.test;
 
+import java.time.LocalDate;
+
 import nintendo.model.Boutique;
 
 import nintendo.model.Client;
@@ -11,8 +13,8 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Console gamecube = new Console("Gamecube");
-		Console wii = new Console("wii");
+		Console gamecube = new Console("Gamecube",100,LocalDate.parse("2018-08-15"));
+		Console wii = new Console("wii", 75.5 ,LocalDate.now());
 		Boutique b1=new Boutique("Escromania","12","Paris","rue des escrocs","75000");
 		Boutique b2=new Boutique("Micromafia","21","Brest","rue des mafieux","29200");
 		Boutique boutique = new Boutique("Mario","14", "Paris", "Rue des Chammpignons", "75011");

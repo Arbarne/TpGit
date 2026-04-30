@@ -1,5 +1,6 @@
 package nintendo.test;
 
+import nintendo.model.Boutique;
 import nintendo.model.Console;
 import nintendo.model.Jeu;
 
@@ -14,6 +15,10 @@ public class Test {
 		Jeu j3 = new Jeu("mario sushine", gamecube);
 		Jeu j4 = new Jeu("f-zero", gamecube);
 		Jeu j5 = new Jeu("zelda twilight princess", wii);
+		
+		Boutique boutique = new Boutique("Mario","14", "Paris", "Rue des Chammpignons", "75011");
+		
+		
 	}
 
 }

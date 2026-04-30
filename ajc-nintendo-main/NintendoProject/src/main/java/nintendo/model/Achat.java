@@ -13,6 +13,8 @@ public class Achat {
 		this.date = date;
 		this.prix = prix;
 	}
+	
+	
 	@Override
 	public String toString() {
 		return "Achat [jeu=" + jeu + ", date=" + date + ", prix=" + prix + "]";

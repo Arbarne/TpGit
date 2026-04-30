@@ -2,8 +2,10 @@ package nintendo.test;
 
 import java.time.LocalDate;
 
+import nintendo.model.Achat;
 import nintendo.model.Boutique;
 import nintendo.model.Client;
+import nintendo.model.Console;
 import nintendo.model.Hybride;
 import nintendo.model.Jeu;
 import nintendo.model.Portable;
@@ -30,12 +32,22 @@ public class Test {
 		Jeu j4 = new Jeu("f-zero", gamecube,b2);
 		Jeu j5 = new Jeu("zelda twilight princess", wii,boutique);
 
-			
 
-	
+
+
 		Client client1 = new Client("Toto", "Titi");
 		Client client2 = new Client("Patate", "Frites");
-	  
+
+		Achat achat1 = new Achat(j1, LocalDate.now(), 50);
+		Achat achat2 = new Achat(j3, LocalDate.now(), 50);
+
+		client1.ajouterAchat(achat1);
+		client2.ajouterAchat(achat2);
+
+		j1.setBoutique(b1);
+		j3.setBoutique(b2);
+
+		
 	}
 
 }

@@ -35,8 +35,5 @@ public class Achat {
 	public void setPrix(int prix) {
 		this.prix = prix;
 	}
-	public Achat() {
-		// TODO Auto-generated constructor stub
-	}
 
 }
